@@ -21,6 +21,10 @@ const userSchema = new mongoose.Schema({
         required:true,
 
     },
+    avatar:{
+      type:String,
+      default:"https://blog.photofeeler.com/wp-content/uploads/2017/12/linkedin-profile-picture.jpg"
+    },
     
 }, {timestamps:true});
 
