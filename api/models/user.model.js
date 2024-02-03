@@ -23,8 +23,9 @@ const userSchema = new mongoose.Schema({
     },
     avatar:{
       type:String,
-      default:"https://blog.photofeeler.com/wp-content/uploads/2017/12/linkedin-profile-picture.jpg"
+      default:"https://a.storyblok.com/f/191576/1200x800/faa88c639f/round_profil_picture_before_.webp"
     },
+    
     
 }, {timestamps:true});
 
