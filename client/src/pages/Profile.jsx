@@ -7,6 +7,8 @@ import {getStorage, uploadBytesResumable, ref, getDownloadURL } from "firebase/s
 import {app} from "../firebase"
 import { updateUserStart,updateUserSuccess,updateUserFailure, deleteUserFailure, deleteUserStart, deleteUserSuccess, signOutUserFailure, signOutUserSuccess, signOutUserStart } from '../redux/user/userSlice';
 import { useDispatch } from 'react-redux';
+
+
 const Profile = () => {
   
   const fileRef = useRef(null)
@@ -156,7 +158,8 @@ const Profile = () => {
         <button disabled={loading}  className='bg-slate-700 text-white p-3 rounded-lg uppercase hover:opacity-95 disabled:opacity-80'>
            {loading ? "Loading..." :"Update"}
          </button> 
-
+          
+        <Link className='bg-green-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-95 ' to="/create-listing">create listing</Link>
          
       </form>
        

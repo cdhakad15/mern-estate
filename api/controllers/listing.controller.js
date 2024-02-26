@@ -8,6 +8,6 @@ export const createListing = async(req,res,next)=>{
             listing,
         })
     } catch (error) {
-        
+        next(error);
     }
 }
