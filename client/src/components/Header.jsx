@@ -64,7 +64,7 @@ const Header = () => {
             src={currentUser.avatar} alt="profile"  />
           ):
           
-          (<li className="hidden sm:inline text-slate-700 hover:underline cursor-pointer">Sign in</li>
+          (<li className=" text-slate-700 hover:underline cursor-pointer">Sign in</li>
 )}
           
           </Link>
